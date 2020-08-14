@@ -15,9 +15,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.data.cv.person.name }}'s CV</title>
-  <meta name="author" content="{{ site.data.cv.name }}" />
-  <meta name="description" content="{{ site.data.cv.name }}'s CV" />
+  <title>{{ site.cv.person.name }}'s CV</title>
+  <meta name="author" content="{{ site.cv.name }}" />
+  <meta name="description" content="{{ site.cv.name }}'s CV" />
   <link rel="shortcut icon" href="/favicon.png">
   <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="cv.css" rel="stylesheet">
@@ -46,46 +46,46 @@
   <div class="container">
       <div class="row header bg-gray">
           <div class="col-xs-4">
-              <h1 class="name">{{ site.data.cv.person.name }}</h1>
-              <span class="profession">{{ site.data.cv.person.profession }}</span>
+              <h1 class="name">{{ site.cv.person.name }}</h1>
+              <span class="profession">{{ site.cv.person.profession }}</span>
           </div>
 
           <div class="col-md-5 text-center">
-              <img src="{{ site.data.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.data.cv.person.name }}'s Photo" class="img-rounded">
+              <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded">
           </div>
 
           <div class="col-xs-3">
               <ul class="list-unstyled">
-                  {% if site.data.cv.person.location %}
-                      <li><i class="fa fa-map-marker"></i> {{site.data.cv.person.location}}</li>
+                  {% if site.cv.person.location %}
+                      <li><i class="fa fa-map-marker"></i> {{site.cv.person.location}}</li>
                   {% endif%}
-                  {% if site.data.cv.person.citizenship %}
-                      <li><i class="fa fa-flag-o"></i> {{site.data.cv.person.citizenship}}</li>
+                  {% if site.cv.person.citizenship %}
+                      <li><i class="fa fa-flag-o"></i> {{site.cv.person.citizenship}}</li>
                   {% endif%}
-                  {% if site.data.cv.person.email %}
+                  {% if site.cv.person.email %}
                       <li><i class="fa fa-envelope-o"></i>
-                          <a href="mailto: {{ site.data.cv.person.email }}">{{site.data.cv.person.email }}</a></li>
+                          <a href="mailto: {{ site.cv.person.email }}">{{site.cv.person.email }}</a></li>
                   {% endif%}
-                  {% if site.data.cv.person.site %}
+                  {% if site.cv.person.site %}
                       <li><i class="fa fa-laptop"></i>
-                          <a href="http://{{ site.data.cv.person.site }}">{{ site.data.cv.person.site }}</a></li>
+                          <a href="http://{{ site.cv.person.site }}">{{ site.cv.person.site }}</a></li>
                   {% endif%}
-                  {% if site.data.cv.person.phone %}
-                      <li><i class="fa fa-phone"></i> {{site.data.cv.person.phone}}</li>
+                  {% if site.cv.person.phone %}
+                      <li><i class="fa fa-phone"></i> {{site.cv.person.phone}}</li>
                   {% endif%}
-                  {% if site.data.cv.person.github %}
+                  {% if site.cv.person.github %}
                       <li><i class="fa fa-github"></i>
-                          <a href="https://github.com{{site.data.cv.person.github}}">{{site.data.cv.person.github}}</a>
+                          <a href="https://github.com{{site.cv.person.github}}">{{site.cv.person.github}}</a>
                       </li>
                   {% endif%}
-                  {% if site.data.cv.person.stackoverflow %}
+                  {% if site.cv.person.stackoverflow %}
                       <li><i class="fa fa-stack-overflow"></i> <a
-                              href="http://stackoverflow.com/users/1252056{{site.data.cv.person.stackoverflow}}">{{site.data.cv.person.stackoverflow}}</a>
+                              href="http://stackoverflow.com/users/1252056{{site.cv.person.stackoverflow}}">{{site.cv.person.stackoverflow}}</a>
                       </li>
                   {% endif%}
-                  {% if site.data.cv.person.linkedin %}
+                  {% if site.cv.person.linkedin %}
                   <li><i class="fa fa-linkedin"></i>
-                      <a href="https://www.linkedin.com/in{{site.data.cv.person.linkedin}}">{{site.data.cv.person.linkedin}}</a>
+                      <a href="https://www.linkedin.com/in{{site.cv.person.linkedin}}">{{site.cv.person.linkedin}}</a>
                   </li>
                   {% endif%}
               </ul>
@@ -99,7 +99,7 @@
               </div>
 
       <div class="col-xs-9">
-        {% for item in site.data.cv.career %}
+        {% for item in site.cv.career %}
          <div class="jd">
           <div class="row">
             <div class="col-xs-6">
@@ -143,21 +143,21 @@
          <div class="col-xs-4">
 
            <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> Backend</h4>
-            {% for item in site.data.cv.technicalSkills.backend %} {{item.name}}
+            {% for item in site.cv.technicalSkills.backend %} {{item.name}}
           <div class="progress">
             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{item.level}}%"></div>
           </div>
           {% endfor %}
         </div>
         <div class="col-xs-4">
-          <h4 class="techSkillHeader"><i class="fa fa-code"></i> Frontend</h4> {% for item in site.data.cv.technicalSkills.frontend %} {{item.name}}
+          <h4 class="techSkillHeader"><i class="fa fa-code"></i> Frontend</h4> {% for item in site.cv.technicalSkills.frontend %} {{item.name}}
           <div class="progress">
             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{item.level}}%"></div>
           </div>
           {% endfor %}
         </div>
         <div class="col-xs-4">
-          <h4 class="techSkillHeader"><i class="fa fa-cogs"></i> Other</h4> {% for item in site.data.cv.technicalSkills.other %} {{item.name}}
+          <h4 class="techSkillHeader"><i class="fa fa-cogs"></i> Other</h4> {% for item in site.cv.technicalSkills.other %} {{item.name}}
           <div class="progress">
             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{item.level}}%"></div>
           </div>
@@ -167,7 +167,7 @@
         <div>
           <h4><i class="fa fa-male"></i> Key competencies:</h4>
         <ul>
-          {% for item in site.data.cv.technicalSkills.list %}
+          {% for item in site.cv.technicalSkills.list %}
             <li>{{item.tr}}</li>
           {% endfor %}
         </ul>
@@ -180,7 +180,7 @@
     <div class="row  section section-border">
       <div class="col-xs-3"><h2>Side Projects</h2></div>
       <div class="col-xs-9">
-        {% for item in site.data.cv.sideProjects %}
+        {% for item in site.cv.sideProjects %}
         <div class="row side-project">
           <div class="col-xs-5">
             <h4>
@@ -205,7 +205,7 @@
       <div class="col-xs-3"><h2>Education</h2></div>
       <div class="col-xs-9">
 
-        {% for item in site.data.cv.education %}
+        {% for item in site.cv.education %}
         <div class="row">
           <div class="col-xs-12"><h4><b>{{item.name}}</b></h4></div>
           <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> {{item.degree}} ({{item.dates}})</div>
