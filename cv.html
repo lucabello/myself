@@ -140,46 +140,16 @@
         <h2>Technical knowledge</h2>
       </div>
       <div class="col-xs-9">
-        <div class="row">
-         <div class="col-xs-4">
-
-           <h4 class="techSkillHeader"><i class="fa fa-terminal"></i> Backend</h4>
-            {% for item in site.cv.technicalSkills.backend %} {{item.name}}
-          <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{item.level}}%"></div>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="col-xs-4">
-          <h4 class="techSkillHeader"><i class="fa fa-code"></i> Frontend</h4> {% for item in site.cv.technicalSkills.frontend %} {{item.name}}
-          <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{item.level}}%"></div>
-          </div>
-          {% endfor %}
-        </div>
-        <div class="col-xs-4">
-          <h4 class="techSkillHeader"><i class="fa fa-cogs"></i> Other</h4> {% for item in site.cv.technicalSkills.other %} {{item.name}}
-          <div class="progress">
-            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: {{item.level}}%"></div>
-          </div>
-          {% endfor %}
-        </div>
-        </div>
         <div>
           <h4><i class="fas fa-laptop-code"></i>Programming Languages</h4>
-        <ul>
           {% for item in site.cv.programmingLanguages.list %}
-            <li>{{item.tr}}</li>
+            <p class="skill">{{item.tr}}</p>
           {% endfor %}
-        </ul>
           <h4><i class="fas fa-keyboard"></i>Other Skills</h4>
-        <ul>
           {% for item in site.cv.otherSkills.list %}
-            <li>{{item.tr}}</li>
+            <p class="skill">{{item.tr}}</p>
           {% endfor %}
-        </ul>
-
-            </div>
+         </div>
       </div>
     </div>
 
