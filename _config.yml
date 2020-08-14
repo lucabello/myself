@@ -320,4 +320,21 @@ cv:
       level: very basic
       certification:
       
+  hobbies:
+    - name: Capoeira
+      icon: fas fa-fist-raised
+      content: 
+        name: Capoeira Workshop, Capoeira CVM Sweden 2018
+        link: https://www.youtube.com/watch?v=3SxN76reXic
+    - name: Classical Piano
+      icon: fas fa-music
+      content:
+        name: Chopin - Fantaisie Impromptu, Op. 66 (Rubinstein)
+        link: https://www.youtube.com/watch?v=75x6DncZDgI
+    - name: Composer / Music Producer
+      icon: fab fa-spotify
+      content:
+        name: Luca Bello on Spotify
+        link: spotify:artist:2JeMOQJ4WvWbJbhNX9kjr7
+      
       
