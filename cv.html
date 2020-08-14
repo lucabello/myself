@@ -46,14 +46,14 @@
 <body>
   <div class="container">
       <div class="row header bg-gray">
-        <div class="col-md-3 text-center">
+        <div class="col-md-2 text-center">
           <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded">
         </div>  
         <div class="col-xs-4">
           <h1 class="name">{{ site.cv.person.name }}</h1>
           <span class="profession">{{ site.cv.person.profession }}</span>
         </div>
-        <div class="col-xs-2"></div>
+        <div class="col-xs-3"></div>
         <div class="col-xs-3">
           <ul class="list-unstyled">
             {% if site.cv.person.location %}
@@ -68,50 +68,48 @@
         </div>
       </div>
 
-
-    <div class="row  section section-border">
-      <div class="col-xs-3">
-        <h2>Career</h2>
-              </div>
-
-      <div class="col-xs-9">
-        {% for item in site.cv.career %}
-         <div class="jd">
-          <div class="row">
-            <div class="col-xs-6">
-              <h4><b>{{ item.position }}</b></h4>
-            </div>
-            <div class="col-xs-6 pull-right">
-              <h5 class="pull-right">{{ item.dates }}<br/>
-              {{item.company}} <i>({{item.location}})</i></h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <p>{{ item.summary }}</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-
-           {% if item.accomplishments.size > 0 %}
-            <b>Selected accomplishments:</b>
-           {% endif %}
-            <ul>
-            {% for itemm in item.accomplishments %}
-              <li>{{itemm.accomplishment}}</li>
-            {% endfor %}
-            </ul>
-          </div>
-           </div>
+    
+      <div class="row  section section-border">
+        <div class="col-xs-3">
+          <h2>Career</h2>
         </div>
-        {% endfor %}
+        <div class="col-xs-9">
+          {% for item in site.cv.career %}
+            <div class="jd">
+              <div class="row">
+                <div class="col-xs-6">
+                  <h4><b>{{ item.position }}</b></h4>
+                </div>
+                <div class="col-xs-6 pull-right">
+                  <h5 class="pull-right">{{ item.dates }}<br/>
+                  {{item.company}} <i>({{item.location}})</i></h5>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>{{ item.summary }}</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  {% if item.accomplishments.size > 0 %}
+                    <b>Selected accomplishments:</b>
+                  {% endif %}
+                  <ul>
+                    {% for itemm in item.accomplishments %}
+                      <li>{{itemm.accomplishment}}</li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
-    </div>
 
-
-    <div class="row section section-border pagebreakishere">
-      <div class="col-xs-3">
+      
+      <div class="row section section-border pagebreakishere">
+        <div class="col-xs-3">
         <h2>Technical knowledge</h2>
       </div>
       <div class="col-xs-9">
