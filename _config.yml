@@ -183,7 +183,7 @@ cv:
     location: Geneva, Switzerland
     contacts:
       - name: Email
-        link: lusgabello@gmail.com
+        link: mailto:lusgabello@gmail.com
         icon: far fa-envelope
       - name: Website
         link: https://lucabello.github.io/myself/
