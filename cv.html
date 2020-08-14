@@ -46,49 +46,47 @@
 <body>
   <div class="container">
       <div class="row header bg-gray">
-          <div class="col-xs-4">
-              <h1 class="name">{{ site.cv.person.name }}</h1>
-              <span class="profession">{{ site.cv.person.profession }}</span>
-          </div>
-
-          <div class="col-md-5 text-center">
-              <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded">
-          </div>
-
-          <div class="col-xs-3">
-              <ul class="list-unstyled">
-                  {% if site.cv.person.location %}
-                      <li><i class="fas fa-map-marker-alt"></i> {{site.cv.person.location}}</li>
-                  {% endif%}
-                  {% if site.cv.person.citizenship %}
-                      <li><i class="fas fa-flag"></i> {{site.cv.person.citizenship}}</li>
-                  {% endif%}
-                  {% if site.cv.person.email %}
-                      <li><i class="far fa-envelope"></i>
-                          <a href="mailto: {{ site.cv.person.email }}">{{site.cv.person.email }}</a></li>
-                  {% endif%}
-                  {% if site.cv.person.site %}
-                      <li><i class="fas fa-laptop"></i>
-                          <a href="http://{{ site.cv.person.site }}">{{ site.cv.person.site }}</a></li>
-                  {% endif%}
-                  {% if site.cv.person.phone %}
-                      <li><i class="fas fa-phone"></i> {{site.cv.person.phone}}</li>
-                  {% endif%}
-                  {% if site.cv.person.github %}
-                      <li><i class="fab fa-github"></i>
-                          <a href="https://github.com{{site.cv.person.github}}">{{site.cv.person.github}}</a>
-                      </li>
-                  {% endif%}
-                  {% if site.cv.person.stackoverflow %}
-                      <li><i class="fab fa-stack-overflow"></i> <a
-                              href="http://stackoverflow.com/users/1252056{{site.cv.person.stackoverflow}}">{{site.cv.person.stackoverflow}}</a>
-                      </li>
-                  {% endif%}
-                  {% if site.cv.person.linkedin %}
-                  <li><i class="fab fa-linkedin"></i>
-                      <a href="https://www.linkedin.com/in{{site.cv.person.linkedin}}">{{site.cv.person.linkedin}}</a>
-                  </li>
-                  {% endif%}
+        <div class="col-md-5 text-center">
+          <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded">
+        </div>  
+        <div class="col-xs-4">
+          <h1 class="name">{{ site.cv.person.name }}</h1>
+          <span class="profession">{{ site.cv.person.profession }}</span>
+        </div>
+        <div class="col-xs-3">
+          <ul class="list-unstyled">
+            {% if site.cv.person.location %}
+                <li><i class="fas fa-map-marker-alt"></i> {{site.cv.person.location}}</li>
+            {% endif%}
+            {% if site.cv.person.citizenship %}
+                <li><i class="fas fa-flag"></i> {{site.cv.person.citizenship}}</li>
+            {% endif%}
+            {% if site.cv.person.email %}
+                <li><i class="far fa-envelope"></i>
+                    <a href="mailto: {{ site.cv.person.email }}">{{site.cv.person.email }}</a></li>
+            {% endif%}
+            {% if site.cv.person.site %}
+                <li><i class="fas fa-laptop"></i>
+                    <a href="http://{{ site.cv.person.site }}">{{ site.cv.person.site }}</a></li>
+            {% endif%}
+            {% if site.cv.person.phone %}
+                <li><i class="fas fa-phone"></i> {{site.cv.person.phone}}</li>
+            {% endif%}
+            {% if site.cv.person.github %}
+                <li><i class="fab fa-github"></i>
+                    <a href="https://github.com{{site.cv.person.github}}">{{site.cv.person.github}}</a>
+                </li>
+            {% endif%}
+            {% if site.cv.person.stackoverflow %}
+                <li><i class="fab fa-stack-overflow"></i> <a
+                        href="http://stackoverflow.com/users/1252056{{site.cv.person.stackoverflow}}">{{site.cv.person.stackoverflow}}</a>
+                </li>
+            {% endif%}
+            {% if site.cv.person.linkedin %}
+            <li><i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in{{site.cv.person.linkedin}}">{{site.cv.person.linkedin}}</a>
+            </li>
+            {% endif%}
               </ul>
           </div>
       </div>
