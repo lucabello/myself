@@ -265,37 +265,49 @@ cv:
   
   knowledge:
     generalPurpose:
-      - tr: C
-      - tr: C++
-      - tr: Python
-      - tr: Java
-      - tr: Assembler x86
-      - tr: Assembler ARM
+      icon: fas fa-laptop-code
+      list:
+        - tr: C
+        - tr: C++
+        - tr: Python
+        - tr: Java
+        - tr: Assembler x86
+        - tr: Assembler ARM
     dataScience:
-      - tr: Hadoop
-      - tr: Apache Spark
-      - tr: R
-      - tr: Matlab
-      - tr: SQL
+      icon: fas fa-database
+      list:
+        - tr: Hadoop
+        - tr: Apache Spark
+        - tr: R
+        - tr: Matlab
+        - tr: SQL
     frameworks:
-      - tr: QT
-      - tr: Flask
-      - tr: NodeJS
+      icon: fas fa-box
+      list:
+        - tr: QT
+        - tr: Flask
+        - tr: NodeJS
     web:
-      - tr: Javascript
-      - tr: CSS
-      - tr: HTML
-      - tr: PHP
-      - tr: Jekyll
+      icon: fas fa-network-wired
+      list:
+        - tr: Javascript
+        - tr: CSS
+        - tr: HTML
+        - tr: PHP
+        - tr: Jekyll
     others:
-      - tr: Git
-      - tr: LaTeX
-      - tr: Bash
-      - tr: AWK
+      icon: fas fa-cog
+      list:
+        - tr: Git
+        - tr: LaTeX
+        - tr: Bash
+        - tr: AWK
     tools:
-      - tr: GDB
-      - tr: IDA Pro
-      - tr: Blender
+      icon: fas fa-toolbox
+      list:
+        - tr: GDB
+        - tr: IDA Pro
+        - tr: Blender
   
   languages:
     - language: Italian
