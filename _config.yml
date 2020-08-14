@@ -199,29 +199,31 @@ cv:
      # - accomplishment: 
      # - accomplishment: 
 
-  technicalSkills:
+  programmingLanguages:
     list:
-      - tr: "Impulsive, creative and very social"
-      - tr: "Heart and soul of the Ninja Turtles"
-      - tr: "Master of the Kusarigama and nunchucks"
-      - tr: "Labeled as 'The Wild One' and 'The Party Dude'"
-      - tr: "First of the turtles to taste pizza"
-      - tr: "Very proud of his talent for naming thing"
-    backend:
-     - name: Ninjutsu
-       level: 90
-     - name: Kusarigama
-       level: 80
-    frontend:
-     - name: Cooking Skills
-       level: 80
-     - name: Pranks
-       level: 90
-    other:
-     - name: Shadow Puppet Skill
-       level: 90
-     - name: Teaching
-       level: 100
+      - tr: C
+      - tr: C++
+      - tr: Python
+      - tr: SQL
+      - tr: R
+      - tr: Java
+      - tr: Matlab
+      - tr: HTML
+      - tr: PHP
+      - tr: CSS
+      - tr: Javscript
+      - tr: Assembler x86/ARM
+  otherSkills:
+    list:
+      - tr: Hadoop
+      - tr: Apache Spark
+      - tr: Qt
+      - tr: Jekyll
+      - tr: Flask
+      - tr: NodeJS
+      - tr: LaTeX
+      - tr: Git
+      - tr: GDB
 
   sideProjects:
     - name: jekyll-clean-dark
