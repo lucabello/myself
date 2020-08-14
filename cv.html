@@ -216,7 +216,11 @@
           <div class="jd">
             <div class="row">
               <h4><i class="{{item.icon}}"></i> {{item.name}}</h4>
-              <h5><b>Reference:</b> <a href="{{item.content.link}}">{{item.content.name}}</a>
+              {% if item.content.name == "Luca Bello on Spotify" %}
+                <h5><b>A (not so) random reference:</b> <a href="{{item.content.link}}">{{item.content.name}}</a>
+              {% else %}
+                <h5><b>A random reference:</b> <a href="{{item.content.link}}">{{item.content.name}}</a>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
