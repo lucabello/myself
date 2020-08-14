@@ -176,7 +176,7 @@ social-links:
 
 
 cv:
-- person:
+  person:
     name: Luca Bello
     depiction: avatar.png
     profession: Data Scientist
@@ -189,7 +189,7 @@ cv:
     stackoverflow: 
     linkedin: /luca-bello
 
-- career:
+  career:
    - position: Foot Clan Antagonist
      company: TMNT inc.
      location: New York, USA
@@ -207,7 +207,7 @@ cv:
       - accomplishment: Mikey's skills as a skateboarder and a ninja give him a great ability with balance.
       - accomplishment: He has the normal ability of a turtle to go into his shell.
 
-- technicalSkills:
+  technicalSkills:
     list:
       - tr: "Impulsive, creative and very social"
       - tr: "Heart and soul of the Ninja Turtles"
@@ -231,7 +231,7 @@ cv:
      - name: Teaching
        level: 100
 
-- sideProjects:
+  sideProjects:
     - name: jekyll-clean-dark
       description: Theme for Jekyll - static site generator. After creating theme for my blog I shared it on github.
       link: https://github.com/streetturtle/jekyll-clean-dark
@@ -244,7 +244,7 @@ cv:
       type: site
       langs: AngularJS/HTML/CSS/Bootstrap
 
-- education:
+  education:
     - name: Master Splinter Academy
       degree: Mutant Red-Eared Slider
       location: sewers of New York City
