@@ -28,6 +28,7 @@
 
 <body>
   <div class="container">
+    <!-- Header section -->
     <div class="row header bg-gray">
       <div class="col-md-2 text-center">
         <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded" style="border: solid black;">
@@ -51,7 +52,7 @@
       </div>
     </div>
 
-
+    <!-- Career section -->
     <div class="row  section section-border">
       <div class="col-xs-3">
         <h2>Career</h2>
@@ -90,6 +91,66 @@
       </div>
     </div>
 
+    <!-- Education section -->
+    <div class="row section section-border">
+      <div class="col-xs-3"><h2>Education</h2></div>
+      <div class="col-xs-9">
+        {% for item in site.cv.education %}
+          <div class="jd">
+            <div class="row">
+              <div class="col-xs-12"><h4><b>{{item.name}}</b> at {{item.school}}</h4></div>
+              <div class="col-xs-12"><i class="far fa-calendar-alt"></i> {{item.dates}}</br> <i class="fas fa-map-marker-alt"></i> {{item.location}}</div>
+              {% if item.mark %}
+                <div class="col-xs-12"><i class="fas fa-graduation-cap"></i> Obtained mark: {{item.mark}}</div>
+              {% endif %}
+              </br>
+              <div class="col-xs-12">{{item.description}}</div>
+              </br>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Further Education section -->
+    <div class="row  section section-border">
+      <div class="col-xs-3">
+        <h2>Further Education</h2>
+      </div>
+      <div class="col-xs-9">
+        {% for item in site.cv.furtherEducation %}
+          <div class="jd">
+            <div class="row">
+              <div class="col-xs-6">
+                <h4><b>{{ item.name }}</b></h4> 
+              </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right"><i class="far fa-calendar-alt"></i> {{ item.dates }}<br/></h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <p>{{ item.description }}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                {% if item.accomplishments.size > 0 %}
+                  <b>Selected accomplishments:</b>
+                {% endif %}
+                <ul>
+                  {% for itemm in item.accomplishments %}
+                    <li>{{itemm.accomplishment}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
 
     <div class="row section section-border pagebreakishere">
       <div class="col-xs-3">
@@ -124,23 +185,7 @@
     </div>
 
 
-    <div class="row section section-border">
-      <div class="col-xs-3"><h2>Education</h2></div>
-      <div class="col-xs-9">
-        {% for item in site.cv.education %}
-          <div class="row">
-            <div class="col-xs-12"><h4><b>{{item.name}}</b> at {{item.school}}</h4></div>
-            <div class="col-xs-12"><i class="fas fa-map-marker-alt"></i> {{item.location}}</br><i class="far fa-calendar-alt"></i> {{item.dates}}</div>
-            {% if item.mark %}
-              <div class="col-xs-12"><i class="fas fa-graduation-cap"></i> Obtained mark: {{item.mark}}</div>
-            {% endif %}
-            </br>
-            <div class="col-xs-12">{{item.description}}</div>
-            </br>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+    
 
 </body>
 
