@@ -101,7 +101,7 @@
               <div class="col-xs-12"><h4><b>{{item.name}}</b> at {{item.school}}</h4></div>
               <div class="col-xs-12"><i class="far fa-calendar-alt"></i> {{item.dates}}</br> <i class="fas fa-map-marker-alt"></i> {{item.location}}</div>
               {% if item.mark %}
-                <div class="col-xs-12"><i class="fas fa-graduation-cap"></i> Obtained mark: {{item.mark}}</div>
+                <div class="col-xs-12"><i class="fas fa-graduation-cap"></i> <b>Obtained mark:</b> {{item.mark}}</div>
               {% endif %}
               </br>
               <div class="col-xs-12">{{item.description}}</div>
@@ -136,7 +136,7 @@
             <div class="row">
               <div class="col-xs-12">
                 {% if item.accomplishments.size > 0 %}
-                  <b>Selected accomplishments:</b>
+                  <b>Main takeaways:</b>
                 {% endif %}
                 <ul>
                   {% for itemm in item.accomplishments %}
@@ -151,7 +151,7 @@
     </div>
 
 
-
+    <!-- Technical Knowledge section -->
     <div class="row section section-border pagebreakishere">
       <div class="col-xs-3">
         <h2>Technical knowledge</h2>
@@ -168,7 +168,7 @@
       </div>
     </div>
 
-
+    <!-- Side Projects section -->
     <div class="row  section section-border">
       <div class="col-xs-3"><h2>Side Projects</h2></div>
       <div class="col-xs-9">
@@ -184,6 +184,21 @@
       </div>
     </div>
 
+
+    <!-- Languages -->
+    <div class="row section section-border">
+      <div class="col-xs-3"><h2>Languages</h2></div>
+      <div class="col-xs-9">
+        {% for item in site.cv.languages %}
+          <div class="row">
+            <h4>{{item.language}}</h4>
+            <h5><b>Level:</b> {{item.level}}</h5>
+            {% if item.certification %}
+              <h5><b>Certification:</b> {{item.certification}}</h5>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
 
     
 
