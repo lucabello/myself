@@ -1,7 +1,10 @@
 # Theme
 remote_theme: 'lucabello/myself'
 
-# Title and tag line
+headtitle: Luca Bello
+headdescription: My personal webpage, powered by Jekyll and GitHub pages.
+
+# Title
 title: 'title.png'
 
 # Images
