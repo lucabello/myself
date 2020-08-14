@@ -195,9 +195,9 @@ cv:
      location: Geneva, Switzerland
      dates: September 2020 - current
      summary: The Programme is aimed at graduates from universities or higher technical institutes in a wide range of applied sciences, computing and engineering with limited or no work experience, looking to work in a research group.
-     accomplishments:
-      - accomplishment: 
-      - accomplishment: 
+     #accomplishments:
+     # - accomplishment: 
+     # - accomplishment: 
 
   technicalSkills:
     list:
