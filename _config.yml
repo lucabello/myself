@@ -264,8 +264,7 @@ cv:
       description:
   
   knowledge:
-    generalPurpose:
-      name: General Purpose
+    - name: General Purpose
       icon: fas fa-laptop-code
       list:
         - tr: C
@@ -274,8 +273,7 @@ cv:
         - tr: Java
         - tr: Assembler x86
         - tr: Assembler ARM
-    dataScience:
-      name: Data Science
+    - name: Data Science
       icon: fas fa-database
       list:
         - tr: Hadoop
@@ -283,15 +281,13 @@ cv:
         - tr: R
         - tr: Matlab
         - tr: SQL
-    frameworks:
-      name: Frameworks
+    - name: Frameworks
       icon: fas fa-box
       list:
         - tr: QT
         - tr: Flask
         - tr: NodeJS
-    web:
-      name: Web
+    - name: Web
       icon: fas fa-network-wired
       list:
         - tr: Javascript
@@ -299,16 +295,14 @@ cv:
         - tr: HTML
         - tr: PHP
         - tr: Jekyll
-    others:
-      name: Others
+    - name: Others
       icon: fas fa-cog
       list:
         - tr: Git
         - tr: LaTeX
         - tr: Bash
         - tr: AWK
-    tools:
-      name: Tools
+    - name: Tools
       icon: fas fa-toolbox
       list:
         - tr: GDB
