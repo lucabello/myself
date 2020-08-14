@@ -184,14 +184,19 @@ cv:
     contacts:
       - name: Email
         link: lusgabello@gmail.com
+        icon: far fa-envelope
       - name: Website
         link: https://lucabello.github.io/myself/
+        icon: fas fa-laptop
       - name: Phone
         link: 
+        icon: fas fa-phone
       - name: GitHub
         link: https://github.com/lucabello
+        icon: fab fa-github
       - name: LinkedIn
         link: https://linkedin.com/in/luca-bello
+        icon: fab fa-linkedin
 
   career:
    - position: Junior Fellow
