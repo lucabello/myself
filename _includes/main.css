@@ -18,13 +18,20 @@ body {
   display: block;
   position: fixed;
   z-index: -999;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 #avatar {
     height: 180px;
     border-radius: 100%;
     border: 3px solid white;
     margin-bottom: 40px;
+}
+#title {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1 {
     color: white;
