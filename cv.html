@@ -58,34 +58,34 @@
           <div class="col-xs-3">
               <ul class="list-unstyled">
                   {% if site.cv.person.location %}
-                      <li><i class="fa fa-map-marker"></i> {{site.cv.person.location}}</li>
+                      <li><i class="fas fa-map-marker-alt"></i> {{site.cv.person.location}}</li>
                   {% endif%}
                   {% if site.cv.person.citizenship %}
-                      <li><i class="fa fa-flag-o"></i> {{site.cv.person.citizenship}}</li>
+                      <li><i class="fas fa-flag"></i> {{site.cv.person.citizenship}}</li>
                   {% endif%}
                   {% if site.cv.person.email %}
-                      <li><i class="fa fa-envelope-o"></i>
+                      <li><i class="far fa-envelope"></i>
                           <a href="mailto: {{ site.cv.person.email }}">{{site.cv.person.email }}</a></li>
                   {% endif%}
                   {% if site.cv.person.site %}
-                      <li><i class="fa fa-laptop"></i>
+                      <li><i class="fas fa-laptop"></i>
                           <a href="http://{{ site.cv.person.site }}">{{ site.cv.person.site }}</a></li>
                   {% endif%}
                   {% if site.cv.person.phone %}
-                      <li><i class="fa fa-phone"></i> {{site.cv.person.phone}}</li>
+                      <li><i class="fas fa-phone"></i> {{site.cv.person.phone}}</li>
                   {% endif%}
                   {% if site.cv.person.github %}
-                      <li><i class="fa fa-github"></i>
+                      <li><i class="fab fa-github"></i>
                           <a href="https://github.com{{site.cv.person.github}}">{{site.cv.person.github}}</a>
                       </li>
                   {% endif%}
                   {% if site.cv.person.stackoverflow %}
-                      <li><i class="fa fa-stack-overflow"></i> <a
+                      <li><i class="fab fa-stack-overflow"></i> <a
                               href="http://stackoverflow.com/users/1252056{{site.cv.person.stackoverflow}}">{{site.cv.person.stackoverflow}}</a>
                       </li>
                   {% endif%}
                   {% if site.cv.person.linkedin %}
-                  <li><i class="fa fa-linkedin"></i>
+                  <li><i class="fab fa-linkedin"></i>
                       <a href="https://www.linkedin.com/in{{site.cv.person.linkedin}}">{{site.cv.person.linkedin}}</a>
                   </li>
                   {% endif%}
