@@ -37,7 +37,7 @@ github-user: 'lucabello'
 email: 'lusgabello@gmail.com'
 #messenger: 'myfbchat'
 resumee: 'cv'
-spotify: '2JeMOQJ4WvWbJbhNX9kjr7?si=T7ByDKFMR6OKd4F8WTK0HA'
+spotify: '2JeMOQJ4WvWbJbhNX9kjr7'
 
 social-links-order: [resumee, linkedin, github-user, spotify, instagram, email]
 
@@ -169,5 +169,6 @@ social-links:
     icon-class: far fa-2x fa-user
     
   - name: spotify
-    url-pattern: https://open.spotify.com/artist/__USERNAME__
+    url-scheme: 'spotify:artist:'
+    url-pattern: '__USERNAME__'
     icon-class: fab fa-2x fa-spotify
