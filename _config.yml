@@ -34,8 +34,9 @@ github-user: 'lucabello'
 email: 'lusgabello@gmail.com'
 #messenger: 'myfbchat'
 resumee: 'cv'
+spotify: '2JeMOQJ4WvWbJbhNX9kjr7?si=T7ByDKFMR6OKd4F8WTK0HA'
 
-social-links-order: [resumee, linkedin, github-user, instagram, email]
+social-links-order: [resumee, linkedin, github-user, spotify, instagram, email]
 
 # Advanced settings
 plugins:
@@ -163,3 +164,7 @@ social-links:
   - name: resumee
     url-pattern: lucabello.github.io/myself/__USERNAME__
     icon-class: far fa-2x fa-user
+    
+  - name: spotify
+    url-pattern: https://open.spotify.com/artist/__USERNAME__
+    icon-class: fab fa-2x fa-spotify
