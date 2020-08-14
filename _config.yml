@@ -181,13 +181,17 @@ cv:
     depiction: avatar.jpg
     profession: Data Scientist
     location: Geneva, Switzerland
-    citizenship: IT
-    email: lusgabello@gmail.com
-    site: https://lucabello.github.io/myself/
-    phone: 
-    github: /lucabello
-    stackoverflow: 
-    linkedin: /luca-bello
+    contacts:
+      - name: Email
+        link: lusgabello@gmail.com
+      - name: Website
+        link: https://lucabello.github.io/myself/
+      - name: Phone
+        link: 
+      - name: GitHub
+        link: https://github.com/lucabello
+      - name: LinkedIn
+        link: https://linkedin.com/in/luca-bello
 
   career:
    - position: Junior Fellow
@@ -198,49 +202,102 @@ cv:
      #accomplishments:
      # - accomplishment: 
      # - accomplishment: 
+   - position: Co-Founder and CTO
+     company: Edyn Solutions
+     location: Turin, Italy
+     dates: Jul 2017 - Nov 2017
+     summary: Built an international team of 5 people to create a startup. Edyn was an excess food solution that wanted to provide businesses with a platform to redistribute their excess food through donations to non-profit organizations.
+     accomplishments:
+       - accomplishment: Participated in the EIA competition, talking to several investors.
+       - accomplishment: Won a sponsorship Trademark Award by the legal firm Nixon Peabody LLP.
 
-  programmingLanguages:
-    list:
+  sideProjects:
+    - name: kangaroo-docs
+      description: A collaborative rich text editor in C++ based on the Qt framework; it supports and manages account creation, file storage and server access, with a lot of functionalities.
+      link: https://github.com/lucabello/kangaroo-docs
+      type: github
+      dates: Mar 2019 - Sep 2019
+
+    - name: lucy
+      description: Application which helps with learning foreign numerals. Was created to help with learning how to write french numbers as well as to practice AngularJS.
+      link: https://github.com/AmI-2018/Lucy
+      type: github
+      dates: Mar 2018 - Sep 2018
+      
+  furtherEducation:
+    - name: CyberChallenge.IT
+      dates: Mar 2018 - Jun 2018
+      description: Participated in a training program in cybersecurity, organized by CINI (Italian Cybersecurity National Lab). Learned about security problems of web, software and most effective techniques for defense and ethical hacking, with a strong emphasis on practice.
+      accomplishments:
+        - accomplishment: Acquired practical experience in many different areas of cybersecurity.
+        - accomplishment: Chosen to represent Politecnico di Torino in a national cybersecurity competition in Rome.
+    - name: European Innovation Academy
+      dates: Jul 2017
+      description: Acceleration program for creating a startup. Got in touch with people all around the world, giving me a strong advantage in communication, organization, planning, dealing with deadlines. Acquired a strong multicultural background and solid English knowledge from this experience.
+      accomplishments:
+        - accomplishment: 500 people from 70+ nationalities creating 100 startups.
+        - accomplishment: Got greatly enhanced management skills on different levels.
+
+
+  education:
+    - name: Master's Degree in Computer Engineering
+      school: Politecnico di Torino (ERASMUS at Chalmers University, Sweden)
+      location: Turin, Italy
+      mark: 110/110 summa cum laude
+      dates: 2018 - 2020
+      description: Attending courses of the Data Science track, with an yearly ERASMUS experience at Chalmers University in Sweden involving courses and writing the thesis.
+    - name: Bahcelor's Degree in Computer Engineering
+      school: Politecnico di Torino
+      location: Turin, Italy
+      mark: 110/110 summa cum laude
+      dates: 2015 - 2018
+      description: Attended the excellence program "Young Talents", which collects the top tier talent of the university.
+    - name: Pianist Preacademic Diploma
+      school: Music Conservatory "T. Schipa"
+      location: Lecce, Italy
+      dates: 2010 - 2014
+      description:
+  
+  knowledge:
+    generalPurpose:
       - tr: C
       - tr: C++
       - tr: Python
-      - tr: SQL
-      - tr: R
       - tr: Java
-      - tr: Matlab
-      - tr: HTML
-      - tr: PHP
-      - tr: CSS
-      - tr: Javscript
-      - tr: Assembler x86/ARM
-  otherSkills:
-    list:
+      - tr: Assembler x86
+      - tr: Assembler ARM
+    dataScience:
       - tr: Hadoop
       - tr: Apache Spark
-      - tr: Qt
-      - tr: Jekyll
+      - tr: R
+      - tr: Matlab
+      - tr: SQL
+    frameworks:
+      - tr: QT
       - tr: Flask
       - tr: NodeJS
-      - tr: LaTeX
+    web:
+      - tr: Javascript
+      - tr: CSS
+      - tr: HTML
+      - tr: PHP
+      - tr: Jekyll
+    others:
       - tr: Git
+      - tr: LaTeX
+      - tr: Bash
+      - tr: AWK
+    tools:
       - tr: GDB
-
-  sideProjects:
-    - name: jekyll-clean-dark
-      description: Theme for Jekyll - static site generator. After creating theme for my blog I shared it on github.
-      link: https://github.com/streetturtle/jekyll-clean-dark
-      type: github
-      langs: HTML/CSS/Bootstrap
-
-    - name: number-writing-trainer
-      description: Application which helps with learning foreign numerals. Was created to help with learning how to write french numbers as well as to practice AngularJS.
-      link: http://pavelmakhov.com/number-writing-trainer/#/
-      type: site
-      langs: AngularJS/HTML/CSS/Bootstrap
-
-  education:
-    - name: Master Splinter Academy
-      degree: Mutant Red-Eared Slider
-      location: sewers of New York City
-      dates: 2007 – 2012
-      link: http://tmnt2012series.wikia.com/
+      - tr: IDA Pro
+      - tr: Blender
+  
+  languages:
+    - language: Italian
+      level: native speaker
+      certification:
+    - language: English
+      level: complete and professional proficiency
+      certification: C1
+    - language: Swedish
+      level: very basic
