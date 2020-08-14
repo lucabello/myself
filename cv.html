@@ -28,105 +28,97 @@
 
 <body>
   <div class="container">
-      <div class="row header bg-gray">
-        <div class="col-md-2 text-center">
-          <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded" style="border: solid black;">
-        </div>  
-        <div class="col-xs-4">
-          <h1 class="name">{{ site.cv.person.name }}</h1>
-          <span class="profession">{{ site.cv.person.profession }}</span>
-        </div>
-        <div class="col-xs-3"></div>
-        <div class="col-xs-3">
-          <ul class="list-unstyled">
-            {% if site.cv.person.location %}
-              <li><i class="fas fa-map-marker-alt"></i>Based in {{site.cv.person.location}}</li>
+    <div class="row header bg-gray">
+      <div class="col-md-2 text-center">
+        <img src="{{ site.cv.person.depiction }}" height="130px" width="130px" alt="{{ site.cv.person.name }}'s Photo" class="img-rounded" style="border: solid black;">
+      </div>  
+      <div class="col-xs-4">
+        <h1 class="name">{{ site.cv.person.name }}</h1>
+        <span class="profession">{{ site.cv.person.profession }}</span>
+      </div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-3">
+        <ul class="list-unstyled">
+          {% if site.cv.person.location %}
+            <li><i class="fas fa-map-marker-alt"></i>Based in {{site.cv.person.location}}</li>
+          {% endif %}
+          {% for item in site.cv.person.contacts %}
+            {% if item.link %}
+              <li><i class="{{item.icon}}"></i><a href="{{item.link}}">{{item.name}}</a>
             {% endif %}
-            {% for item in site.cv.person.contacts %}
-              {% if item.link %}
-                <li><i class="{{item.icon}}"></i><a href="{{item.link}}">{{item.name}}</a>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
+          {% endfor %}
+        </ul>
       </div>
+    </div>
 
-    
-      <div class="row  section section-border">
-        <div class="col-xs-3">
-          <h2>Career</h2>
-        </div>
-        <div class="col-xs-9">
-          {% for item in site.cv.career %}
-            <div class="jd">
-              <div class="row">
-                <div class="col-xs-6">
-                  <h4><b>{{ item.position }}</b> at {{item.company}}</h4> 
-                </div>
-                <div class="col-xs-6 pull-right">
-                  <h5 class="pull-right"><i class="far fa-calendar-alt"></i> {{ item.dates }}<br/>
-                  <i class="fas fa-map-marker-alt"></i> {{item.location}}</h5>
-                </div>
+
+    <div class="row  section section-border">
+      <div class="col-xs-3">
+        <h2>Career</h2>
+      </div>
+      <div class="col-xs-9">
+        {% for item in site.cv.career %}
+          <div class="jd">
+            <div class="row">
+              <div class="col-xs-6">
+                <h4><b>{{ item.position }}</b> at {{item.company}}</h4> 
               </div>
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>{{ item.summary }}</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12">
-                  {% if item.accomplishments.size > 0 %}
-                    <b>Selected accomplishments:</b>
-                  {% endif %}
-                  <ul>
-                    {% for itemm in item.accomplishments %}
-                      <li>{{itemm.accomplishment}}</li>
-                    {% endfor %}
-                  </ul>
-                </div>
+              <div class="col-xs-6 pull-right">
+                <h5 class="pull-right"><i class="far fa-calendar-alt"></i> {{ item.dates }}<br/>
+                <i class="fas fa-map-marker-alt"></i> {{item.location}}</h5>
               </div>
             </div>
-          {% endfor %}
-        </div>
-      </div>
-
-      
-      <div class="row section section-border pagebreakishere">
-        <div class="col-xs-3">
-          <h2>Technical knowledge</h2>
-        </div>
-        <div class="col-xs-9">
-          {% for item in site.cv.knowledge %}
-            <div>
-              <h4><i class="{{item.icon}}"></i>{{item.name}}</h4>
-              {% for itemm in item.list %}
-                <p class="skill">{{itemm.tr}}</p>
-              {% endfor %}
+            <div class="row">
+              <div class="col-xs-12">
+                <p>{{ item.summary }}</p>
+              </div>
             </div>
-          {% endfor %}
-        </div>
-      </div>
-
-
-      <div class="row  section section-border">
-        <div class="col-xs-3"><h2>Side Projects</h2></div>
-        <div class="col-xs-9">
-        {% for item in site.cv.sideProjects %}
-        <div class="row side-project">
-          <div class="col-xs-5">
-            <h4>
-            {% if item.type == 'github' %}
-                <i class="fa fa-github"></i>
-              {% elsif item.type == 'site' %}
-                <i class="fa fa-globe"></i>
-              {% endif %}
-              <a href="{{item.link}}">{{item.name}}</a>
-            </h4>
-
-            <h5>{{item.langs}}</h5>
+            <div class="row">
+              <div class="col-xs-12">
+                {% if item.accomplishments.size > 0 %}
+                  <b>Selected accomplishments:</b>
+                {% endif %}
+                <ul>
+                  {% for itemm in item.accomplishments %}
+                    <li>{{itemm.accomplishment}}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="col-xs-7">{{item.description}}</div>
-        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
+    <div class="row section section-border pagebreakishere">
+      <div class="col-xs-3">
+        <h2>Technical knowledge</h2>
+      </div>
+      <div class="col-xs-9">
+        {% for item in site.cv.knowledge %}
+          <div>
+            <h4><i class="{{item.icon}}"></i>{{item.name}}</h4>
+            {% for itemm in item.list %}
+              <p class="skill">{{itemm.tr}}</p>
+            {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
+    <div class="row  section section-border">
+      <div class="col-xs-3"><h2>Side Projects</h2></div>
+      <div class="col-xs-9">
+        {% for item in site.cv.sideProjects %}
+          <div class="row side-project">
+            <div class="col-xs-5">
+              <h4><a href="{{item.link}}">{{item.name}}</a></h4>
+              <h5><i class="far fa-calendar-alt"></i> {{ item.dates }}</h5>
+            </div>
+            <div class="col-xs-7">{{item.description}}</div>
+          </div>
         {% endfor %}
       </div>
     </div>
@@ -135,16 +127,19 @@
     <div class="row section section-border">
       <div class="col-xs-3"><h2>Education</h2></div>
       <div class="col-xs-9">
-
         {% for item in site.cv.education %}
-        <div class="row">
-          <div class="col-xs-12"><h4><b>{{item.name}}</b></h4></div>
-          <div class="col-xs-12"><i class="fa fa-graduation-cap"></i> {{item.degree}} ({{item.dates}})</div>
-          <div class="col-xs-12"><a href="{{item.link}}">{{item.link}}</a>, {{item.location}}</div>
-        </div>
+          <div class="row">
+            <div class="col-xs-12"><h4><b>{{item.name}}</b> at {{item.school}}</h4></div>
+            <div class="col-xs-12">{{item.location}} ({{item.dates}})</div>
+            {% if item.mark %}
+              <div class="col-xs-12">Obtained mark: {{item.mark}}</div>
+            {% endif %}
+            <div class="col-xs-12">{{item.description}}</div>
+          </div>
         {% endfor %}
-        </div>
+      </div>
     </div>
+
 </body>
 
 </html>
