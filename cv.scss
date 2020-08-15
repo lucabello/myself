@@ -116,6 +116,11 @@ h1, h2{
   padding: 3px;
 }
 
-.sidebar {
-  font-size: 10pt;
+@media (max-width: 450px) {
+  .sidebar{
+    margin-left: -50px;
+    font-size: 13pt;
+    text-align: center;
+    font-weight: bold;
+  }
 }
